@@ -1,16 +1,124 @@
-<html>
-    <h1>
-        Hey, I'm Samuel
-    </h1>
-    <body>
-        <h2>About me</h2>
-        <p>
-            I am a coffee addict who makes vidoes sometimes.
-        </p>
-        <h2>What I'm working on</h2>
-        <p>
-            I'm obsessed with AI right now and I'm working on the CPTS from HTB.
-        </p>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel's Random Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        main {
+            padding: 1.5rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1rem;
+        }
+
+        .card-content h3 {
+            margin: 0.5rem 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hey, I'm Samuel</h1>
+        <p>Coffee addict • Video maker • AI enthusiast</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <img src="https://source.unsplash.com/random/400x300?coffee" alt="Coffee">
+            <div class="card-content">
+                <h3>About Me</h3>
+                <p>I’m a coffee addict who occasionally trades caffeine for creativity. When I’m not brewing ideas, I’m brewing coffee.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://source.unsplash.com/random/400x300?computer" alt="Computer">
+            <div class="card-content">
+                <h3>What I'm Working On</h3>
+                <p>Currently obsessed with AI and tackling the CPTS from Hack The Box. Sleep is optional, curiosity isn’t.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://source.unsplash.com/random/400x300?city" alt="City">
+            <div class="card-content">
+                <h3>Life in Motion</h3>
+                <p>I love wandering around cities, capturing little slices of chaos and calm through my camera lens.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://source.unsplash.com/random/400x300?coding" alt="Coding">
+            <div class="card-content">
+                <h3>Creative Experiments</h3>
+                <p>I spend way too much time coding random things just to see if they work — and usually, they kinda do.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://source.unsplash.com/random/400x300?abstract" alt="Abstract">
+            <div class="card-content">
+                <h3>Random Thoughts</h3>
+                <p>Life’s too short for perfect plans — sometimes you just have to improvise and enjoy the randomness.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Samuel's Random Gallery — Powered by Coffee ☕</p>
+    </footer>
+</body>
 </html>
+
+
 
