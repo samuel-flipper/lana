@@ -3,122 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samuel's Random Gallery</title>
+    <title>The History of Artificial Intelligence</title>
     <style>
+        /* General Styling */
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            background-color: #f4f4f4;
+            font-family: "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
             color: #333;
+            background-color: #f9f9f9;
         }
 
         header {
-            background-color: #333;
+            background: linear-gradient(135deg, #2b5876, #4e4376);
             color: white;
             text-align: center;
-            padding: 2rem 1rem;
+            padding: 4rem 1rem;
         }
 
-        h1 {
-            margin: 0;
-            font-size: 2.5rem;
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
         }
 
-        main {
-            padding: 1.5rem;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
         }
 
-        .card {
+        section {
+            max-width: 900px;
+            margin: 3rem auto;
             background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            overflow: hidden;
-            transition: transform 0.2s;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
         }
 
-        .card:hover {
-            transform: scale(1.03);
+        h2 {
+            color: #4e4376;
+            border-left: 5px solid #4e4376;
+            padding-left: 10px;
         }
 
-        .card img {
+        img {
             width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .card-content {
-            padding: 1rem;
-        }
-
-        .card-content h3 {
-            margin: 0.5rem 0;
+            border-radius: 10px;
+            margin: 1.5rem 0;
         }
 
         footer {
-            background-color: #333;
-            color: white;
             text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
+            background-color: #2b5876;
+            color: white;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem;
+            margin: 0;
+        }
+
+        nav li {
+            margin: 0 1rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4e4376;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #2b5876;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            section {
+                margin: 1rem;
+                padding: 1rem;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Hey, I'm Samuel</h1>
-        <p>Coffee addict • Video maker • AI enthusiast</p>
+        <h1>The History of Artificial Intelligence</h1>
+        <p>From early dreams to modern reality</p>
     </header>
 
-    <main>
-        <div class="card">
-            <img src="https://source.unsplash.com/random/400x300?coffee" alt="Coffee">
-            <div class="card-content">
-                <h3>About Me</h3>
-                <p>I’m a coffee addict who occasionally trades caffeine for creativity. When I’m not brewing ideas, I’m brewing coffee.</p>
-            </div>
-        </div>
+    <nav>
+        <ul>
+            <li><a href="#beginnings">Beginnings</a></li>
+            <li><a href="#golden-age">The Golden Age</a></li>
+            <li><a href="#ai-winter">AI Winters</a></li>
+            <li><a href="#modern-ai">Modern AI</a></li>
+            <li><a href="#future">The Future</a></li>
+        </ul>
+    </nav>
 
-        <div class="card">
-            <img src="https://source.unsplash.com/random/400x300?computer" alt="Computer">
-            <div class="card-content">
-                <h3>What I'm Working On</h3>
-                <p>Currently obsessed with AI and tackling the CPTS from Hack The Box. Sleep is optional, curiosity isn’t.</p>
-            </div>
-        </div>
+    <section id="beginnings">
+        <h2>Beginnings of AI (1940s–1950s)</h2>
+        <img src="https://source.unsplash.com/900x400?computer" alt="Early computers">
+        <p>
+            The concept of artificial intelligence dates back to the 1940s, when early computer scientists began wondering whether machines could "think". 
+            Alan Turing’s 1950 paper, <em>"Computing Machinery and Intelligence"</em>, posed the famous question: 
+            <strong>“Can machines think?”</strong>
+        </p>
+        <p>
+            During this era, simple neural networks and symbolic reasoning systems were first explored — setting the foundation for decades of innovation.
+        </p>
+    </section>
 
-        <div class="card">
-            <img src="https://source.unsplash.com/random/400x300?city" alt="City">
-            <div class="card-content">
-                <h3>Life in Motion</h3>
-                <p>I love wandering around cities, capturing little slices of chaos and calm through my camera lens.</p>
-            </div>
-        </div>
+    <section id="golden-age">
+        <h2>The Golden Age (1956–1970s)</h2>
+        <img src="https://source.unsplash.com/900x400?robot" alt="Early AI research">
+        <p>
+            The term "Artificial Intelligence" was officially coined at the <strong>Dartmouth Conference in 1956</strong>, marking the birth of AI as a field of study. 
+            Early programs like the Logic Theorist and ELIZA demonstrated that computers could mimic aspects of human reasoning and conversation.
+        </p>
+        <p>
+            Researchers were optimistic — predicting that human-level AI was only a few decades away.
+        </p>
+    </section>
 
-        <div class="card">
-            <img src="https://source.unsplash.com/random/400x300?coding" alt="Coding">
-            <div class="card-content">
-                <h3>Creative Experiments</h3>
-                <p>I spend way too much time coding random things just to see if they work — and usually, they kinda do.</p>
-            </div>
-        </div>
+    <section id="ai-winter">
+        <h2>AI Winters (1970s–1990s)</h2>
+        <img src="https://source.unsplash.com/900x400?frozen" alt="AI Winter concept">
+        <p>
+            Progress slowed during the so-called "AI Winters", as funding and interest declined. 
+            Many early promises had not been fulfilled, and computers of the time lacked the power and data to make AI truly practical.
+        </p>
+        <p>
+            Despite this, progress continued quietly in specialized areas like expert systems, robotics, and computer vision.
+        </p>
+    </section>
 
-        <div class="card">
-            <img src="https://source.unsplash.com/random/400x300?abstract" alt="Abstract">
-            <div class="card-content">
-                <h3>Random Thoughts</h3>
-                <p>Life’s too short for perfect plans — sometimes you just have to improvise and enjoy the randomness.</p>
-            </div>
-        </div>
-    </main>
+    <section id="modern-ai">
+        <h2>The Rise of Modern AI (2000s–Present)</h2>
+        <img src="https://source.unsplash.com/900x400?artificial-intelligence" alt="Modern AI">
+        <p>
+            The explosion of data, advances in hardware, and breakthroughs in deep learning reignited AI research. 
+            Algorithms such as convolutional neural networks began outperforming humans in image recognition, language translation, and strategic games.
+        </p>
+        <p>
+            Technologies like <strong>ChatGPT</strong>, <strong>AlphaGo</strong>, and <strong>DALL·E</strong> have transformed how humans interact with machines — making AI a central force in modern innovation.
+        </p>
+    </section>
+
+    <section id="future">
+        <h2>The Future of AI</h2>
+        <img src="https://source.unsplash.com/900x400?future-technology" alt="Future AI concept">
+        <p>
+            As AI continues to evolve, it raises deep questions about ethics, consciousness, and the limits of human creativity. 
+            From autonomous systems to personal assistants, AI is poised to shape nearly every aspect of society.
+        </p>
+        <p>
+            The story of AI is far from over — it’s only just beginning.
+        </p>
+    </section>
 
     <footer>
-        <p>© 2025 Samuel's Random Gallery — Powered by Coffee ☕</p>
+        <p>© 2025 The History of AI | Designed by Sam</p>
     </footer>
 </body>
 </html>
-
-
 
